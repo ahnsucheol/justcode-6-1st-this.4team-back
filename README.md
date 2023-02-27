@@ -1,8 +1,9 @@
 
-<img src="https://velog.velcdn.com/images/hh1008/post/8bf080da-6a3c-4cbd-881e-f41fb3fbb0e3/image.png " width="200px"/>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/110225060/197337903-82af5ddd-444f-443b-a16a-b48b56ef2bf1.png" width=200/>
 
-### 이거사조팀의 **`Hola!`** Clone 코딩 프로젝트입니다.
-👉[Hola!](https://holaworld.io/)
+  ### 👉 이거사조팀의 **[Hola!](https://holaworld.io/)** 클론 코딩 프로젝트
+</div>
 
 ---
 <br>
@@ -15,20 +16,12 @@
 
 <br>
 
-### **프로젝트 구현 영상**
-
-영상링크 필요 
-
-<br>
-
 ### **개발 인원 및 기간**
 
 - 개발기간 : 2022/8/29 ~ 2022/9/8
 - 개발 인원 : 6명
 - 프론트 엔드 : 이혜림, 안승섭, 박유빈, 이고운
 - 백 엔드 : 김현정, 안수철
-- [프론트엔드 Github 링크](https://github.com/wecode-bootcamp-korea/justcode-6-1st-this.4team-front)
-- [백엔드 Github 링크](https://github.com/wecode-bootcamp-korea/justcode-6-1st-this.4team-back)
 
 <br>
 
@@ -65,21 +58,48 @@
 <br>
 
 ### **프로젝트 선정이유**
-
+-  Hola Word는 겉보기에는 간단한 사이트처럼 보이지만, 게시글과 댓글의 작성, 읽기, 수정, 삭제 등 웹 개발의 기본적인 기능을 경험해 볼 수 있는 사이트입니다. 이 프로젝트는 부트 캠프에서 처음 시작하는 프로젝트인 만큼 현업에서 사용되는 기술과 기능을 최대한 반영하여 웹 개발의 기본적인 기능을 경험해 볼 수 있도록 구현하였습니다.
 -  e-commerce 사이트의 경우 조회에 관련된 기능들이 메인으로 조회 기능에 치우쳐서 프로젝트를 진행하기 보다는 밸런스있게 CRUD를 경험하고자 선정하였습니다.
 -  이미지 저작권 문제 해소
 
+### **사용 스택**
+#### FE
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=Sass&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/Slick-FF880F?style=for-the-badge&logo=SlickPic&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/React modal-0088CC?style=for-the-badge&logo=React&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/Create portal-09D3AC?style=for-the-badge&logo=Create React App&logoColor=white"/>&nbsp; <br>
+#### BE
+<img src="https://img.shields.io/badge/Node.js-39933?style=for-the-badge&logo=Node.js&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/TypeORM-262627?style=for-the-badge&logo=TypeORM&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/Bcrypt-003A70?style=for-the-badge&logo=Bcrypt&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/JWT-FBBA00?style=for-the-badge&logo=JWT&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/RESTful API-2478CC?style=for-the-badge&logo=RESTful API&logoColor=white"/>&nbsp;
+
 <br>
 
-## **적용 기술 및 구현 기능**
 
-### **적용 기술**
+# _✨프로젝트 구조_
+```
+📦/
+ ┣ 📂controllers
+ ┣ 📂db
+ ┣ 📂middleware
+ ┣ 📂models
+ ┣ 📂routes
+ ┣ 📂services
+ ┣ 📜app.js.js
+ ┣ 📜package-lock.json
+ ┣ 📜package.json
+ ┗ 📜server.js
+```
+<br>
 
-> **Front-End** : Javascript, React.js, sass, slick, react-modal, create portal
-> 
-
-> **Back-End** : Node.js, express, Bcrypt, JWT, RESTful API
-> 
+# _✨DB 모델링_
+![](https://user-images.githubusercontent.com/110225060/197342659-41c8fe87-7d62-4e41-a043-8bddd7b9c064.png)
 
 <br>
 
@@ -131,7 +151,47 @@
 
 
 <br>
+# _✨프로젝트 실행 방법_
+### 1. 레포지토리 clone
+```
+git clone https://github.com/hhhj1008/justcode-6-1st-this.4team-back.git
+```
 
-## **팀 노션**
-📝[이거사조](https://www.notion.so/wecode/4-4193b03c5f434d29a5c055fff938b777)
+### 2. 프로젝트 폴더 선택 후 아래의 명령어 실행
+```
+npm i
+```
 
+### 3. 데이터베이스 스키마 설정
+dbmate 설치 관련은 [참조](https://github.com/amacneil/dbmate)
+```
+dbmate up
+```
+
+### 4. .env 환경변수 설정
+```
+DATABASE_URL={dbmate 연동 URL} 
+ex) mysql://{user}:{password}@{host}:{port}/{dbname}
+TYPEORM_CONNECTION = 사용할 데이터베이스 종류
+TYPEORM_HOST = host              
+TYPEORM_PORT = port                   
+TYPEORM_USERNAME = user               
+TYPEORM_PASSWORD = password         
+TYPEORM_DATABASE = dbname
+```
+
+### 5. 프로젝트 실행
+```
+npm start
+```
+
+<br>
+
+# _📹프로젝트 시연 영상_
+[![프로젝트 시연 영상](http://img.youtube.com/vi/xo1gqoUQRx0/0.jpg)](https://youtu.be/xo1gqoUQRx0?t=0s) 
+
+<br>
+
+# *✨링크*
+### 👉[API 명세서 ](https://documenter.getpostman.com/view/22723177/2s847Ftsdk)  
+### 👉[프론트엔드 Github 링크](https://github.com/wecode-bootcamp-korea/justcode-6-1st-this.4team-front) 
