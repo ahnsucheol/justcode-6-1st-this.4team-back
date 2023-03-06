@@ -156,7 +156,7 @@
 ### 1. 레포지토리 clone
 
 ```
-git clone https://github.com/hhhj1008/justcode-6-1st-this.4team-back.git
+git clone https://github.com/ahnsucheol/justcode-6-1st-this.4team-back.git
 ```
 
 ### 2. 프로젝트 폴더 선택 후 아래의 명령어 실행
